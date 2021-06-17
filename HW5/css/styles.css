@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+.container{
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.promo{
+    height: 800px;
+    background: #FDC6C2;
+    border: 10px solid #037983;
+}
+
+.logo .logo_text{
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #037983;
+    text-align: center; 
+}
+
+h1{
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2.title{
+    font-family: Pacifico;
+    margin-top: 40px;
+    text-align: center;     
+}
+
+.title{
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #037983;
+    text-align: center;
+}
+
+.simple .title_big{
+    background: url('../img/background.jpg') center center/cover;  
+    padding: 39px 0 62px 0;
+    font-family: Roboto;
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #037983;
+    text-align: center;
+    margin-top: 21px;
+}
+
+.promo .promo_text{
+    font-family: Caveat Regular;
+    background-image: linear-gradient( #FDC6C2 15%,#eb544a);
+    padding: 0 13px;
+    margin-top: 23px;
+    font-size: 21px;
+    color: #037900;
+    text-align: center;
+}
+
+.promo .promo_text span{
+    font-family: Caveat Regular;
+    font-size: 35px;
+    margin-top: 30px;
+    color: #037983;
+    
+}
+
+.logo .logo_img{
+    display: block;
+    margin: 0 auto;
+    opacity: 0.5;
+}
+
+
