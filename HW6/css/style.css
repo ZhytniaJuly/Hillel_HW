@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: purple;
+    text-align: left;
+}
+
+b:nth-child(2n) { 
+    color: red; 
+}
+
+
+p:nth-child(n) { 
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: green;
+    text-align: left;
+}
+
+b::before {
+    content: "& "; 
+}
+
+a[href="http://example.com"] {
+    pointer-events: none;
+}
+
+.box {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.box:hover {
+    background-color: #FFCCCC;
+    width: 200px;
+    height: 200px;
+}
+
+.text {
+    text-indent: 15%;
+    background: plum;
+}
+
+.visible {
+    font-family: Pacifico;
+    visibility: visible;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 600;
+    color: green;
+    text-align: left;
+  }
+  
+.not-visible:hover {
+    visibility: hidden;
+  }
+
+#mozdiv1 {
+    word-spacing: 15px;
+  }
+  
+#mozdiv2 {
+    word-spacing: 5em;
+  } 
+
+.em-wide { 
+    letter-spacing: 0.4em; 
+}
+
+.em-tight { 
+    letter-spacing: -0.05em; 
+}
+
+.col { 
+    background: #f0f0f0; /* Цвет фона */
+    width: 230px; /* Ширина блока */
+    padding: 10px; /* Поля */
+    font-size: 1.5em; /* Размер шрифта */
+    word-wrap: break-word; /* Перенос слов */ 
+   }
+
+img {
+    width: 150px;
+    height: 100px;
+    border: 1px solid #000;
+  }
+  
+.narrow {
+    width: 100px;
+    height: 150px;
+    margin-top: 10px;
+  }
+
+.object {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 940px;
+}
+
+.fill {
+    object-fit: fill;
+  } 
+
+
+  
+
+ 
