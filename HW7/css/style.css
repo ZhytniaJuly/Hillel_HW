@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 600px;
+    height: 350px;
+    background:grey;
+    position: relative;
+    text-align: center;
+}
+
+.block {
+    position: absolute;
+    border: 2px solid black;
+    width: 350px;
+    height: 200px;
+}
+
+#yellow {
+    background:yellow;
+    z-index: 3;
+    left: 10px; 
+    top: 10px;
+}
+
+#blue {
+    background:blue;
+    z-index: 1;
+    right: 10px; 
+    top: 10px;
+}
+
+#green {
+    background: green;
+    z-index: 1;
+    left: 10px; 
+    bottom: 10px;
+}
+
+#red {
+    background: red;
+    z-index: 2;
+    right: 10px; 
+    bottom: 10px;
+}
+
+  
+
+ 
