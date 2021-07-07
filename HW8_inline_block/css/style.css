@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+header{
+    height: 50px;
+    background-color: rgb(47, 50, 202);
+  }
+
+footer {
+    height: 50px;
+    background-color: rgb(45, 148, 218);
+  }
+
+.container main {
+    display: inline-block;
+    width: calc(60% - 1rem);
+    height: calc(100vh - 100px - 1rem); 
+    background-color: rgb(10, 241, 41);
+    margin:  0.1rem;
+  }
+
+.container nav,
+.container aside {
+    display: inline-block;
+    width: 20%;
+    height: calc(100vh - 100px - 1rem);  
+    background-color: lightpink;
+  }
+
+.container nav {
+  margin-left: 0.1rem;
+}
+
+
+ 

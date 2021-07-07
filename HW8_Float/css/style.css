@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+header{
+    height: 50px;
+    background-color: rgb(47, 50, 202);
+  }
+
+footer {
+    height: 50px;
+    background-color: rgb(45, 148, 218);
+  }
+
+.container {
+    overflow: hidden;
+    margin: .5rem 0;  
+  } 
+
+.container main {
+    float: left;
+    width: calc(60% - 1rem);
+    height: calc(100vh - 100px - 1rem);
+    background-color: rgb(10, 241, 41);
+    margin: 0 .5rem;
+  }
+
+.container nav,
+.container aside {
+    float: left;
+    width: 20%;
+    height: calc(100vh - 100px - 1rem);
+    background-color: lightpink;
+  }
+  
+
+ 
