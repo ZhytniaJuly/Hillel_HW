@@ -1,0 +1,214 @@
+:root {
+  --body-bg-color: rgb(121, 10, 111);
+  --section-bg-color: rgb(10, 241, 41);
+  --sidebar-bg-color: lightpink;
+}
+
+body {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;  
+  }
+
+.wrapper-float, 
+.wrapper-inlineblock,
+.wrapper-flex {
+    width: 100%;
+    height: 25vh;
+    background-color: var(--body-bg-color);
+    margin-bottom: 20px;
+  }
+
+.container-float {  
+    overflow: hidden;
+    margin: .5rem; 
+  } 
+
+.container-float section {
+    border: solid;
+    float: left;
+    width: calc(40% - 1rem);
+    height: calc(20vh - 1rem);
+    background-color: var(--section-bg-color);
+    margin: 0 .5rem;
+  }
+
+.container-float aside {
+    border: solid;
+    float: left;
+    width: 20%;
+    height: calc(20vh - 1rem);
+    background-color: var(--sidebar-bg-color);
+  }
+
+.container-inlineblock section {
+    border: solid;
+    display: inline-block;
+    width: calc(40% - 1rem);
+    height: calc(20vh - 1rem); 
+    background-color: var(--section-bg-color);
+    margin-left:  0.6rem;
+  }
+
+.container-inlineblock aside {
+    border: solid;
+    display: inline-block;
+    width: 20%;
+    height: calc(20vh - 1rem);  
+    background-color: var(--sidebar-bg-color);
+    margin-left:  0.1rem;
+  }
+
+.container-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container-flex section,
+.container-flex aside{
+  border: solid;
+  height: calc(20vh - 1rem);
+}
+  
+.container-flex section{
+  margin-left: 1rem;
+  width: 38%;
+  background-color: var(--section-bg-color);
+}
+
+.container-flex aside{
+  width: 20%;
+  background-color: var(--sidebar-bg-color);
+}
+
+@media (max-width: 1023px){
+
+ /* Float  */
+ .container-float {  
+  overflow: hidden;
+  margin: .5rem; 
+} 
+
+.container-float section {
+  border: solid;
+  float: none;
+  width: calc(40% - 1rem);
+  height: calc(10vh - 1rem);
+  background-color: var(--section-bg-color);
+  margin: 0 .5rem;
+}
+
+.container-float aside {
+  border: solid;
+  float: left;
+  width: 20%;
+  height: calc(20vh - 1rem);
+  background-color: var(--sidebar-bg-color);
+}
+/* Inline-block */
+
+
+ /* Flex */
+
+.wrapper-flex{
+  display: flex;
+  }
+.container-flex{
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.container-flex section,
+.container-flex aside{
+  border: solid; 
+}
+  
+.container-flex section{
+  order: -1;
+  margin-left: 1rem;
+  width: 60%;
+  background-color: var(--section-bg-color);
+  flex-basis: 40%;
+}
+
+.container-flex aside{
+  flex:1;
+  height: calc(20vh - 1rem);
+  width: 20%;
+  background-color: var(--sidebar-bg-color);
+}
+}
+
+@media (max-width: 580px){
+  .wrapper-float, 
+  .wrapper-flex,
+  .wrapper-inlineblock {
+    height: 50vh;
+}
+  /* Float */
+  
+  .container-float {  
+    overflow: hidden;
+    margin: .5rem; 
+  } 
+  
+  .container-float section {
+    border: solid;
+    width: calc(100% - 1rem);
+    height: calc(20vh - 1rem);
+    background-color: var(--section-bg-color);
+    margin: 0 .5rem;
+  }
+  
+  .container-float aside {
+    border: solid;
+    width: calc(100% - 1rem);
+    height: calc(10vh - 1rem);
+    background-color: var(--sidebar-bg-color);
+    margin-left: 0.5rem;
+  }
+
+  /* Inline-block */
+  .container-inlineblock section {
+    border: solid;
+    width: calc(100% - 1rem);
+    height: calc(20vh - 1rem);
+    background-color: var(--section-bg-color);
+    margin: 0 .5rem;
+  }
+  
+  .container-inlineblock aside {
+    border: solid;
+    width: calc(100% - 1rem);
+    height: calc(10vh - 1rem);
+    background-color: var(--sidebar-bg-color);
+    margin-left: 0.5rem;
+  }
+  /* Flex */
+
+  .container-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .container-flex section,
+  .container-flex aside{
+    border: solid;
+    height: calc(20vh - 1rem);
+  }
+    
+  .container-flex section{
+    margin-left: 1rem;
+    width: calc(90% - 1rem);
+    background-color: var(--section-bg-color);
+  }
+  
+  .container-flex aside{
+    margin-left: 1rem;
+    width: calc(90% - 1rem);
+    background-color: var(--sidebar-bg-color);
+  }
+  }
