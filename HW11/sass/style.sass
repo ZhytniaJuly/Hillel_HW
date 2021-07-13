@@ -1,4 +1,65 @@
-$text_color: blue
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: rgb(151, 21, 173);
+}
 
-h1
-	color: $text_color
+#wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+
+
+h1 
+   padding-top: 10px;
+   text-align: $main-text-aline;
+}
+
+.content_block1, .content_block2 {
+  width: $width;
+  min-height: $height / $var2;
+  border: $border;
+  background-color: $block-color;
+  margin: $margin; 
+  text-align: $main-text-aline;
+} 
+
+  @media (min-width: 580px) {
+      .content {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          margin: 0px -20px 0px 10px;        
+      } 
+      
+      .content_block1 {
+          width: $width / $var2;
+          min-height: $height / $var2;
+          margin: 0px 0px 0px 0px;  
+      
+      }
+
+      .content_block2 {
+          width: $width / $var2;
+          min-height: $height / $var2;
+          margin: 0px 0px 0px 0px;     
+      }
+  }
+
+.content__sidebar { 
+  @extend .content_block1;
+  background-color: rgb(151, 21, 173);
+  min-height: $height / $var3;
+  text-align: left;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 580px) {
+  .content__sidebar{
+  width: $width / $var2;
+  min-height: $height / $var2;
+  margin: 0px 0px 0px 10px; 
+  }
+}
