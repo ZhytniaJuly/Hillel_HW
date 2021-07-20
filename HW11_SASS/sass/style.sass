@@ -1,53 +1,55 @@
+@import './vars.sass'
+    
 body 
     background-color: rgb(216, 115, 20)
+    
 
 #wrapper 
     position: relative
     overflow-x: hidden
-
-     
-@import './vars.sass'
      
 h1 
      padding-top: 10px
-     text-align: $text-aline
 
-.content_block1, .content_block2
-    width: $width
-    min-height: $height / $var2 
-    border: $border
-    background-color: $block-color
-    margin: $margin
-    text-align: $text-aline
+.content
+    display: flex
+    min-height: 80vh
+    flex-direction: row
+    flex-wrap: wrap
+    margin: 0px 0px 0px 10px
+
+.content__blocks
+    display: flex
+    width: 59%
+
+    @media (max-width: 580px)
+        flex-direction: column
+        width: 100%
+
+.content_block
+    width: 50%  
+    border: 1px solid black
+    background-color: $pink
+
+    @media (max-width: 580px)
+        flex-direction: column
+        width: 95%
+        min-height: 20vh
 
 .content__sidebar
-    @extend .content_block1
-    background-color: rgb(216, 115, 20)
-    min-height: $height / $var3
-    text-align: $text-aline
-    margin-bottom: 10px
- 
-@media (min-width: 580px) 
-        .content 
-            display: flex
-            flex-wrap: wrap
-            flex-direction: row
-            margin: 0px -50px 0px 10px        
-        
-        .content_block1 
-            width: $width / $var2
-            min-height: $height / $var2
-            margin: 0px 0px 0px 0px  
-        
-        .content_block2 
-            width: $width / $var2
-            min-height: $height / $var2
-            margin: 0px 0px 0px 0px
 
-        .content_sidebar
-            width: $width / $var2
-            min-height: $height / $var2
-            margin: 0px 0px 0px 10px    
+    @extend .content_block
+    width: 40%
+    background-color: rgb(216, 115, 20)
+
+    @media (max-width: 580px)
+        width: 95%
+        min-height: 45vh
+  
+        
+       
+
+       
         
 
 
