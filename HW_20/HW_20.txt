@@ -1,0 +1,29 @@
+1. HTML/HTML5, CSS/CSS3
+2. Semantic Markup
+3. Valid and CrossBrouser Markup
+4. Floats, Clearfix
+5. Pseudo elements and pseudo classes
+6. Inline/ inline-block /block
+7. Block model - box-sizing
+8. Inline-block problem and block sizing
+9. Inline-block problem and work around (-4px, font-size: 0)
+10. How to aling el (in vertical direction) table, flex, grid, position and transform, vertical-align
+11. Positions (static, relative, absolute, fixed, sticky)
+12. z-index works with relative
+13. animation (@keyframes)
+14. mobile first, descktop first
+15. Preprocessors SASS/LESS
+16. Gulp vs Grunt vs Webpack
+17. CSS frameworks (Bootstrap, Foundation, Materialize)
+18. Svg, jpeg, png, webP
+19. Fonts (Icon fonts, "FontaweSome, Icomoon")
+20. Selector weight (tag, class, attr, id, inline styles, important)
+21. Selector attribute (-, ^-, $-, *-, ~-, |-)
+22. Git (10 main commands)
+23. Tables (Email markup)
+24. Forms (Type, attributes, Pattern (RegExp)
+25. Reset vs Normalize
+26. Metodology (BEM)
+27. CSS Variables (Custom Properties)
+28. Flex vs grid
+29. Optimization

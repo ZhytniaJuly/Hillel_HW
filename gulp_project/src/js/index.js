@@ -1,4 +1,6 @@
-import Shady from './components/shady';
-
-const slimShady = new Shady('Slim');
-console.log(slimShady.fullName);
+$(document).ready(function(){
+    console.log('Hello');
+    // $('.your-class').slick({
+    //   setting-name: setting-value
+    // });
+  });

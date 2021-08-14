@@ -617,7 +617,43 @@ a {
 
     
 
-}   
+} 
+
+.clients{
+    background:green;
+
+    &__col {
+        
+
+        @media (min-width: 1024px) {
+            width: calc(25%);
+          
+            
+            
+        }
+    }
+    &__row {
+        position: relative;
+
+        @media (min-width: 1024px) {
+            display: flex;
+            flex-wrap: wrap;
+            // justify-content: center;
+             align-items: center;
+            overflow: hidden;
+            min-height: 150px;
+            //align-content: center;
+           
+        }   
+    }
+
+    picture {
+        display: flex;
+        width: 200px;
+        height: 70px;       
+        }   
+    
+}
 
 .publications {
    background: #F5F5FA;
@@ -811,7 +847,7 @@ a {
     letter-spacing: 1px;
     text-transform: uppercase;
     color:#24A3FF;
-    justify-content: center;;
+    justify-content: center;
     }
 
     p{
